@@ -9,14 +9,14 @@ var UploadFileService = /** @class */ (function () {
         // isSuccess: boolean = false;
         var contentType = file.type;
         var bucket = new S3({
-            accessKeyId: 'AKIAVD3UHHKZEPI5DSMX',
-            secretAccessKey: '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',
+            accessKeyId: 'Access key',
+            secretAccessKey: 'secret key',
             //region: 'US West (Oregon) us-west-2'
             //region: 'US East(N.Virginia)us-east - 1'
             region: 'us-east-1'
         });
         var params = {
-            Bucket: 'album-angular',
+            Bucket: 's3 name',
             Key: file.name,
             Body: file,
             ACL: 'public-read',
